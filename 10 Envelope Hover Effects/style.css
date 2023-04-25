@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georama', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #acd2fb;
+}
+
+a {
+    padding: 20px 40px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #073668;
+    text-transform: uppercase;
+    position: relative;
+}
+
+a::before {
+    content: "DEEPAK ENVELOPE";
+    position: absolute;
+    padding: 20px 40px;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-decoration: none;
+    background-color: #7a004b;
+    text-transform: uppercase;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+a:hover::before {
+    transform: rotateX(0deg);
+}
+
+a::after {
+    content: "DEEPAK ENVELOPE";
+    position: absolute;
+    padding: 20px 40px;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-decoration: none;
+    background-color: #1e8623;
+    text-transform: uppercase;
+    transform: rotateX(270deg);
+    transform-origin: bottom;
+    transition: all 0.5s;
+    transition-delay: 0.3s;
+}
+
+a:hover::after {
+    transform: rotateX(0deg);
+}

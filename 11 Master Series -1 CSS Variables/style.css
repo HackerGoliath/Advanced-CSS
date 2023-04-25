@@ -1,0 +1,28 @@
+:root {
+    --colr: brown;
+    --bgcolr: #ECC9EE;
+}
+
+body {
+    background-color: #FFDCB6;
+}
+
+div {
+    background-color: var(--bgcolr);
+}
+
+h1 {
+    /* color: fuchsia; */
+    color: var(--colr);
+}
+
+h2 {
+    /* color: fuchsia; */
+    color: var(--colr);
+}
+
+h3 {
+    /* color: fuchsia; */
+    --colr: red;
+    color: var(--colr);
+}

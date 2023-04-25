@@ -1,0 +1,13 @@
+::selection {
+    background-color: greenyellow;
+    color: crimson;
+}
+
+h1::selection {
+    background-color: aquamarine;
+    color: brown;
+}
+
+div {
+    background-color: blanchedalmond;
+}
