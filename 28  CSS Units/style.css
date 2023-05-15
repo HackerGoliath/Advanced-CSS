@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa69d;
+}
+
+.box {
+    width: 60vw;
+    height: 70vh;
+    font-size: 3.2rem;
+    background-color: #ff793f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.64);
+}

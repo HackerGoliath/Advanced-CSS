@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main_header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #2ecc71;
+}
+.main_header h1 {
+  color: #5f27cd;
+  font-size: 10rem;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+}
+.main_header h1:hover {
+  color: #341f97;
+}
+.main_header h1::after {
+  content: " Channel";
+}
+.main_header p {
+  color: #5f27cd;
+  font-size: 10rem;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+}
+.main_header p:hover {
+  color: #ee5253;
+}/*# sourceMappingURL=main.css.map */

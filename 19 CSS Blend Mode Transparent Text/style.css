@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.main_header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2013/07/25/13/01/stones-167089_960_720.jpg);
+    background-size: 100% 100%;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    background-color: white;
+    padding: 0px 10px;
+    mix-blend-mode: screen;
+}

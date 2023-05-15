@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #227093;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 40vw;
+    height: 70vh;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+
+    /* 1st Method: */
+    /* position: relative; */
+
+    /* 2nd Method: */
+    /* display: table; */
+
+    /* 3rd Method: */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+    /* 4th Method */
+    display: grid;
+    place-items: center;
+
+}
+
+/* 4 Ways to Vertically Center the Text=> */
+
+/* 1st method: */
+/* .main h1 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+} */
+
+/* 2nd Method: */
+/* .main h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+} */

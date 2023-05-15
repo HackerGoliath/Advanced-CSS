@@ -1,0 +1,73 @@
+// sass - css
+// scss - css3
+
+@import "mixin";
+@import "var";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+// 1:operators
+//  2:variables
+// $bg-color: #2ecc71;
+
+// 5: partials(_filename): divide the code in different pages 
+
+
+
+// 4: mixin
+// @mixin flexprops{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// 5: parameters
+// @mixin commonprops($par1,$par2){
+//     color:#5f27cd;
+//     font-size: 5rem + 5rem;
+//     letter-spacing: $par1;
+//     text-transform: $par2;
+// }
+
+.main_header{
+    width: 100vw;
+    height: 100vh;
+    @include flexprops;
+    flex-direction: column;
+    background: $bg-color;
+
+// 3: Nesting
+h1{
+    @include commonprops(0.8rem,uppercase);
+
+    // & refers to parent element
+    &:hover{
+    color: #341f97;
+}
+
+&::after{
+    content: " Channel";
+}
+}
+
+
+
+p{
+    @include commonprops(0.3rem,capitalize);
+
+    &:hover{
+    color: #ee5253;
+}
+}
+
+
+
+}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_div {
+    width: 100vw;
+    height: 100vh;
+    background-color: #192a56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+/* link visited hover active =>shortcut- love hate */
+
+a:link,
+:visited {
+    color: white;
+}
+
+a:hover {
+    color: #192a56;
+    background-color: white;
+}
+
+a:active {
+    color: yellow;
+    background-color: black;
+}
+
+/* a:visited {
+    color: red;
+    background-color: white;
+} */
