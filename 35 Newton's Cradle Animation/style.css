@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --main-bg: hsl(204, 64%, 94%); */
+    --main-bg: radial-gradient(circle 311px at 8.6% 27.9%, rgba(62, 147, 252, 0.57) 12.9%, rgba(239, 183, 192, 0.44) 91.2%);
+    ;
+    --center-bg: #2980b9;
+    --bg: 171, 81, 82;
+    --center-boxshadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25),
+        0 1rem 1rem rgba(0, 0, 0, 0.22);
+    --ballshadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25),
+        0 1rem 1rem rgba(0, 0, 0, 0.22);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main_div {
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--main-bg);
+    display: grid;
+    place-items: center;
+}
+
+.center_div {
+    width: 60%;
+    height: 60%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);
+    /* box-shadow: 0 .8rem 3.2rem 0 rgba(0, 0, 0, 0.37); */
+    box-shadow: var(--center-boxshadow);
+    border: 0.5rem solid rgba(0, 0, 0, 0.18);
+    border-bottom-width: 5rem;
+    /* border-radius: 3.2rem; */
+    display: flex;
+    justify-content: center;
+}
+
+.center_div span {
+    width: 0.5rem;
+    height: 70%;
+    background-color: rgba(var(--bg), 0.7);
+    display: block;
+    margin: 0 2.75rem;
+    position: relative;
+    transform-origin: top;
+}
+
+.center_div span::before {
+    content: "";
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: rgba(var(--bg), 1);
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    box-shadow: var(--ballshadow);
+}
+
+.center_div span:first-child {
+    animation: leftball 2s linear infinite;
+}
+
+.center_div span:last-child {
+    animation: rightball 2s linear 1s infinite;
+}
+
+@keyframes leftball {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(50deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes rightball {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-50deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
