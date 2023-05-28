@@ -52,4 +52,62 @@
     transform: rotate(-120deg);
 }
 
-.eyes {}
+.eyes {
+    width: 28rem;
+    height: 14rrem;
+    display: flex;
+    justify-content: center;
+}
+
+.left_eye,
+.right_eye {
+    width: 8.5rem;
+    height: 10.5rem;
+    background-color: var(--border-clr);
+    border-radius: 5rem;
+    margin-top: 6rem;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.right_eye {
+    margin-left: 4rem;
+}
+
+.left_eye::before,
+.right_eye::before {
+    content: "";
+    width: 4rem;
+    height: 5.25rem;
+    background-color: var(--border-clr);
+    border-radius: 50%;
+    border: 0.8rem solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left_eye::after,
+.right_eye::after {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nose {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--border-clr);
+    margin: auto;
+    margin-top: 1rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
